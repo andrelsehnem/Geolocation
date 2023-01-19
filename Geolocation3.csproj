@@ -1,19 +1,36 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Library</OutputType>
+    <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
-    <Nullable>enable</Nullable>
+    <Nullable>warnings</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <PlatformTarget>x64</PlatformTarget>
-    <ApplicationManifest>app.manifest</ApplicationManifest>
-    <DebugType>embedded</DebugType>
+    <DebugType>none</DebugType>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <GenerateDocumentationFile>False</GenerateDocumentationFile>
+    <ProduceReferenceAssembly>True</ProduceReferenceAssembly>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="CefSharp.Common" Version="109.1.110" />
     <PackageReference Include="CefSharp.WinForms" Version="109.1.110" />
     <PackageReference Include="CefSharp.WinForms.NETCore" Version="109.1.110" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
 
 	<PropertyGroup Condition="'$(PlatformTarget)' == 'x86'">
@@ -29,6 +46,14 @@
 	<PropertyGroup Condition="'$(PlatformTarget)' == 'arm64'">
 		<RuntimeIdentifier Condition="'$(RuntimeIdentifier)' == ''">win-arm64</RuntimeIdentifier>
 		<SelfContained Condition="'$(SelfContained)' == ''">false</SelfContained>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <Optimize>True</Optimize>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+	  <Optimize>False</Optimize>
 	</PropertyGroup>
 
 </Project>
