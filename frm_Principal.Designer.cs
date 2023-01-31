@@ -1,4 +1,4 @@
-﻿namespace Geolocation3
+﻿namespace Littlemium
 {
     partial class frm_Principal
     {
@@ -33,20 +33,23 @@
             this.bt_go = new System.Windows.Forms.Button();
             this.bt_clear = new System.Windows.Forms.Button();
             this.bt_refresh = new System.Windows.Forms.Button();
+            this.bt_avancar = new System.Windows.Forms.Button();
+            this.bt_voltar = new System.Windows.Forms.Button();
+            this.bt_parar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // painel
             // 
-            this.painel.Location = new System.Drawing.Point(2, 34);
+            this.painel.Location = new System.Drawing.Point(2, 49);
             this.painel.Name = "painel";
-            this.painel.Size = new System.Drawing.Size(797, 416);
+            this.painel.Size = new System.Drawing.Size(863, 465);
             this.painel.TabIndex = 0;
             // 
             // txt_url
             // 
-            this.txt_url.Location = new System.Drawing.Point(12, 5);
+            this.txt_url.Location = new System.Drawing.Point(70, 12);
             this.txt_url.Name = "txt_url";
-            this.txt_url.Size = new System.Drawing.Size(680, 23);
+            this.txt_url.Size = new System.Drawing.Size(650, 23);
             this.txt_url.TabIndex = 1;
             this.txt_url.TextChanged += new System.EventHandler(this.txt_url_TextChanged);
             this.txt_url.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_url_KeyPress);
@@ -54,9 +57,10 @@
             // 
             // bt_go
             // 
-            this.bt_go.Location = new System.Drawing.Point(706, 6);
+            this.bt_go.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bt_go.Location = new System.Drawing.Point(726, 10);
             this.bt_go.Name = "bt_go";
-            this.bt_go.Size = new System.Drawing.Size(23, 22);
+            this.bt_go.Size = new System.Drawing.Size(28, 28);
             this.bt_go.TabIndex = 2;
             this.bt_go.Text = "▶";
             this.bt_go.UseVisualStyleBackColor = true;
@@ -64,9 +68,9 @@
             // 
             // bt_clear
             // 
-            this.bt_clear.Location = new System.Drawing.Point(736, 6);
+            this.bt_clear.Location = new System.Drawing.Point(828, 10);
             this.bt_clear.Name = "bt_clear";
-            this.bt_clear.Size = new System.Drawing.Size(23, 22);
+            this.bt_clear.Size = new System.Drawing.Size(28, 28);
             this.bt_clear.TabIndex = 4;
             this.bt_clear.Text = "🗑";
             this.bt_clear.UseVisualStyleBackColor = true;
@@ -74,19 +78,55 @@
             // 
             // bt_refresh
             // 
-            this.bt_refresh.Location = new System.Drawing.Point(765, 6);
+            this.bt_refresh.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bt_refresh.Location = new System.Drawing.Point(760, 10);
             this.bt_refresh.Name = "bt_refresh";
-            this.bt_refresh.Size = new System.Drawing.Size(23, 22);
+            this.bt_refresh.Size = new System.Drawing.Size(28, 28);
             this.bt_refresh.TabIndex = 5;
             this.bt_refresh.Text = "🔃";
             this.bt_refresh.UseVisualStyleBackColor = true;
             this.bt_refresh.Click += new System.EventHandler(this.bt_refresh_Click);
             // 
+            // bt_avancar
+            // 
+            this.bt_avancar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bt_avancar.Location = new System.Drawing.Point(36, 10);
+            this.bt_avancar.Name = "bt_avancar";
+            this.bt_avancar.Size = new System.Drawing.Size(28, 28);
+            this.bt_avancar.TabIndex = 6;
+            this.bt_avancar.Text = "⏩";
+            this.bt_avancar.UseVisualStyleBackColor = true;
+            this.bt_avancar.Click += new System.EventHandler(this.bt_avancar_Click);
+            // 
+            // bt_voltar
+            // 
+            this.bt_voltar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bt_voltar.Location = new System.Drawing.Point(2, 10);
+            this.bt_voltar.Name = "bt_voltar";
+            this.bt_voltar.Size = new System.Drawing.Size(28, 28);
+            this.bt_voltar.TabIndex = 7;
+            this.bt_voltar.Text = "⏪";
+            this.bt_voltar.UseVisualStyleBackColor = true;
+            this.bt_voltar.Click += new System.EventHandler(this.bt_voltar_Click);
+            // 
+            // bt_parar
+            // 
+            this.bt_parar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bt_parar.Location = new System.Drawing.Point(794, 10);
+            this.bt_parar.Name = "bt_parar";
+            this.bt_parar.Size = new System.Drawing.Size(28, 28);
+            this.bt_parar.TabIndex = 8;
+            this.bt_parar.Text = "❌";
+            this.bt_parar.UseVisualStyleBackColor = true;
+            // 
             // frm_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(861, 514);
+            this.Controls.Add(this.bt_avancar);
+            this.Controls.Add(this.bt_parar);
+            this.Controls.Add(this.bt_voltar);
             this.Controls.Add(this.bt_refresh);
             this.Controls.Add(this.bt_clear);
             this.Controls.Add(this.bt_go);
@@ -96,7 +136,7 @@
             this.MaximizeBox = false;
             this.Name = "frm_Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Geolocalização";
+            this.Text = "Littlemium";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frm_Principal_KeyPress);
             this.ResumeLayout(false);
@@ -111,5 +151,8 @@
         private System.Windows.Forms.Button bt_go;
         private System.Windows.Forms.Button bt_clear;
         private System.Windows.Forms.Button bt_refresh;
+        private System.Windows.Forms.Button bt_avancar;
+        private System.Windows.Forms.Button bt_voltar;
+        private System.Windows.Forms.Button bt_parar;
     }
 }

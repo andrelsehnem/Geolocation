@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Geolocation3
+namespace Littlemium
 {
     internal static class Program
     {

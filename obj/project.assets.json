@@ -2,8 +2,24 @@
   "version": 3,
   "targets": {
     "net5.0-windows7.0": {
+      "cef.redist.x64/109.1.11": {
+        "type": "package",
+        "build": {
+          "buildTransitive/cef.redist.x64.props": {}
+        }
+      },
+      "cef.redist.x86/109.1.11": {
+        "type": "package",
+        "build": {
+          "buildTransitive/cef.redist.x86.props": {}
+        }
+      },
       "CefSharp.Common/109.1.110": {
         "type": "package",
+        "dependencies": {
+          "cef.redist.x64": "[109.1.11]",
+          "cef.redist.x86": "[109.1.11]"
+        },
         "build": {
           "buildTransitive/CefSharp.Common.props": {},
           "buildTransitive/CefSharp.Common.targets": {}
@@ -123,6 +139,9 @@
       },
       "CefSharp.WinForms/109.1.110": {
         "type": "package",
+        "dependencies": {
+          "CefSharp.Common": "[109.1.110]"
+        },
         "compile": {
           "lib/net452/CefSharp.WinForms.dll": {}
         },
@@ -150,8 +169,24 @@
       }
     },
     "net5.0-windows7.0/win-x64": {
+      "cef.redist.x64/109.1.11": {
+        "type": "package",
+        "build": {
+          "buildTransitive/cef.redist.x64.props": {}
+        }
+      },
+      "cef.redist.x86/109.1.11": {
+        "type": "package",
+        "build": {
+          "buildTransitive/cef.redist.x86.props": {}
+        }
+      },
       "CefSharp.Common/109.1.110": {
         "type": "package",
+        "dependencies": {
+          "cef.redist.x64": "[109.1.11]",
+          "cef.redist.x86": "[109.1.11]"
+        },
         "build": {
           "buildTransitive/CefSharp.Common.props": {},
           "buildTransitive/CefSharp.Common.targets": {}
@@ -185,6 +220,9 @@
       },
       "CefSharp.WinForms/109.1.110": {
         "type": "package",
+        "dependencies": {
+          "CefSharp.Common": "[109.1.110]"
+        },
         "compile": {
           "lib/net452/CefSharp.WinForms.dll": {}
         },
@@ -235,6 +273,176 @@
     }
   },
   "libraries": {
+    "cef.redist.x64/109.1.11": {
+      "sha512": "1r4xM37BypU8xeRbjWQ+g2IYu/EP0w4TX1ocvUmLEFaOBkXGS5kfqrLItL5ZevcplTOcohaEDERhwPs2c3pitg==",
+      "type": "package",
+      "path": "cef.redist.x64/109.1.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CEF/LICENSE.txt",
+        "CEF/README.txt",
+        "CEF/chrome_100_percent.pak",
+        "CEF/chrome_200_percent.pak",
+        "CEF/chrome_elf.dll",
+        "CEF/d3dcompiler_47.dll",
+        "CEF/icudtl.dat",
+        "CEF/libEGL.dll",
+        "CEF/libGLESv2.dll",
+        "CEF/libcef.dll",
+        "CEF/locales/af.pak",
+        "CEF/locales/am.pak",
+        "CEF/locales/ar.pak",
+        "CEF/locales/bg.pak",
+        "CEF/locales/bn.pak",
+        "CEF/locales/ca.pak",
+        "CEF/locales/cs.pak",
+        "CEF/locales/da.pak",
+        "CEF/locales/de.pak",
+        "CEF/locales/el.pak",
+        "CEF/locales/en-GB.pak",
+        "CEF/locales/en-US.pak",
+        "CEF/locales/es-419.pak",
+        "CEF/locales/es.pak",
+        "CEF/locales/et.pak",
+        "CEF/locales/fa.pak",
+        "CEF/locales/fi.pak",
+        "CEF/locales/fil.pak",
+        "CEF/locales/fr.pak",
+        "CEF/locales/gu.pak",
+        "CEF/locales/he.pak",
+        "CEF/locales/hi.pak",
+        "CEF/locales/hr.pak",
+        "CEF/locales/hu.pak",
+        "CEF/locales/id.pak",
+        "CEF/locales/it.pak",
+        "CEF/locales/ja.pak",
+        "CEF/locales/kn.pak",
+        "CEF/locales/ko.pak",
+        "CEF/locales/lt.pak",
+        "CEF/locales/lv.pak",
+        "CEF/locales/ml.pak",
+        "CEF/locales/mr.pak",
+        "CEF/locales/ms.pak",
+        "CEF/locales/nb.pak",
+        "CEF/locales/nl.pak",
+        "CEF/locales/pl.pak",
+        "CEF/locales/pt-BR.pak",
+        "CEF/locales/pt-PT.pak",
+        "CEF/locales/ro.pak",
+        "CEF/locales/ru.pak",
+        "CEF/locales/sk.pak",
+        "CEF/locales/sl.pak",
+        "CEF/locales/sr.pak",
+        "CEF/locales/sv.pak",
+        "CEF/locales/sw.pak",
+        "CEF/locales/ta.pak",
+        "CEF/locales/te.pak",
+        "CEF/locales/th.pak",
+        "CEF/locales/tr.pak",
+        "CEF/locales/uk.pak",
+        "CEF/locales/ur.pak",
+        "CEF/locales/vi.pak",
+        "CEF/locales/zh-CN.pak",
+        "CEF/locales/zh-TW.pak",
+        "CEF/resources.pak",
+        "CEF/snapshot_blob.bin",
+        "CEF/v8_context_snapshot.bin",
+        "CEF/vk_swiftshader.dll",
+        "CEF/vk_swiftshader_icd.json",
+        "CEF/vulkan-1.dll",
+        "LICENSE.txt",
+        "build/cef.redist.x64.props",
+        "buildTransitive/cef.redist.x64.props",
+        "cef.redist.x64.109.1.11.nupkg.sha512",
+        "cef.redist.x64.nuspec"
+      ]
+    },
+    "cef.redist.x86/109.1.11": {
+      "sha512": "uiybcl2ofiUv4xx/lH2/fNCMQyLsaeLfU6/PHtztp3QM89jhI2hwyVgM0H0iHo1fcfwLeRnNIQM30uYiXKi4OA==",
+      "type": "package",
+      "path": "cef.redist.x86/109.1.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CEF/LICENSE.txt",
+        "CEF/README.txt",
+        "CEF/chrome_100_percent.pak",
+        "CEF/chrome_200_percent.pak",
+        "CEF/chrome_elf.dll",
+        "CEF/d3dcompiler_47.dll",
+        "CEF/icudtl.dat",
+        "CEF/libEGL.dll",
+        "CEF/libGLESv2.dll",
+        "CEF/libcef.dll",
+        "CEF/locales/af.pak",
+        "CEF/locales/am.pak",
+        "CEF/locales/ar.pak",
+        "CEF/locales/bg.pak",
+        "CEF/locales/bn.pak",
+        "CEF/locales/ca.pak",
+        "CEF/locales/cs.pak",
+        "CEF/locales/da.pak",
+        "CEF/locales/de.pak",
+        "CEF/locales/el.pak",
+        "CEF/locales/en-GB.pak",
+        "CEF/locales/en-US.pak",
+        "CEF/locales/es-419.pak",
+        "CEF/locales/es.pak",
+        "CEF/locales/et.pak",
+        "CEF/locales/fa.pak",
+        "CEF/locales/fi.pak",
+        "CEF/locales/fil.pak",
+        "CEF/locales/fr.pak",
+        "CEF/locales/gu.pak",
+        "CEF/locales/he.pak",
+        "CEF/locales/hi.pak",
+        "CEF/locales/hr.pak",
+        "CEF/locales/hu.pak",
+        "CEF/locales/id.pak",
+        "CEF/locales/it.pak",
+        "CEF/locales/ja.pak",
+        "CEF/locales/kn.pak",
+        "CEF/locales/ko.pak",
+        "CEF/locales/lt.pak",
+        "CEF/locales/lv.pak",
+        "CEF/locales/ml.pak",
+        "CEF/locales/mr.pak",
+        "CEF/locales/ms.pak",
+        "CEF/locales/nb.pak",
+        "CEF/locales/nl.pak",
+        "CEF/locales/pl.pak",
+        "CEF/locales/pt-BR.pak",
+        "CEF/locales/pt-PT.pak",
+        "CEF/locales/ro.pak",
+        "CEF/locales/ru.pak",
+        "CEF/locales/sk.pak",
+        "CEF/locales/sl.pak",
+        "CEF/locales/sr.pak",
+        "CEF/locales/sv.pak",
+        "CEF/locales/sw.pak",
+        "CEF/locales/ta.pak",
+        "CEF/locales/te.pak",
+        "CEF/locales/th.pak",
+        "CEF/locales/tr.pak",
+        "CEF/locales/uk.pak",
+        "CEF/locales/ur.pak",
+        "CEF/locales/vi.pak",
+        "CEF/locales/zh-CN.pak",
+        "CEF/locales/zh-TW.pak",
+        "CEF/resources.pak",
+        "CEF/snapshot_blob.bin",
+        "CEF/v8_context_snapshot.bin",
+        "CEF/vk_swiftshader.dll",
+        "CEF/vk_swiftshader_icd.json",
+        "CEF/vulkan-1.dll",
+        "LICENSE.txt",
+        "build/cef.redist.x86.props",
+        "buildTransitive/cef.redist.x86.props",
+        "cef.redist.x86.109.1.11.nupkg.sha512",
+        "cef.redist.x86.nuspec"
+      ]
+    },
     "CefSharp.Common/109.1.110": {
       "sha512": "Rn8mOGJFb9aMDbIWRdgGxfIWpHRXlkXArrQWuCBGT0jm5fIYR7GlTwtnQKkuS89SmaYiTFerZmwx6oamOREPXA==",
       "type": "package",
@@ -1119,19 +1327,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\André Luis\\.nuget\\packages\\": {}
+    "C:\\Users\\als10\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projetos\\C#\\Geolocation3\\Geolocation3.csproj",
-      "projectName": "Geolocation3",
-      "projectPath": "D:\\Projetos\\C#\\Geolocation3\\Geolocation3.csproj",
-      "packagesPath": "C:\\Users\\André Luis\\.nuget\\packages\\",
-      "outputPath": "D:\\Projetos\\C#\\Geolocation3\\obj\\",
+      "projectUniqueName": "D:\\Dev\\C#\\Littlemiun\\Littlemium.csproj",
+      "projectName": "Littlemium",
+      "projectPath": "D:\\Dev\\C#\\Littlemiun\\Littlemium.csproj",
+      "packagesPath": "C:\\Users\\als10\\.nuget\\packages\\",
+      "outputPath": "D:\\Dev\\C#\\Littlemiun\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\André Luis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\als10\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1176,17 +1389,10 @@
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[5.0.17, 5.0.17]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -1195,7 +1401,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
@@ -1209,7 +1415,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "O pacote 'CefSharp.WinForms 109.1.110' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' em vez da estrutura de destino do projeto 'net5.0-windows7.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "message": "O pacote 'CefSharp.WinForms 109.1.110' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto 'net5.0-windows7.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
       "libraryId": "CefSharp.WinForms",
       "targetGraphs": [
         "net5.0-windows7.0"

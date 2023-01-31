@@ -1,21 +1,26 @@
 ﻿using System;
 using System.Windows.Forms;
+using CefSharp;
+using CefSharp.Web;
 using CefSharp.WinForms;
 
-namespace Geolocation3
+namespace Littlemium
 {
     public partial class frm_Principal : Form
     {
         private ChromiumWebBrowser chr;
         public frm_Principal()
         {
+
             InitializeComponent();
+            painel.Controls.Clear();
+            chr = new ChromiumWebBrowser("empty");
+            painel.Controls.Add(chr);
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             
-
         }
 
         private void txt_url_TextChanged(object sender, EventArgs e)
@@ -25,19 +30,12 @@ namespace Geolocation3
 
         private void txt_url_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            //txt_url.Text = $"C:/Users/Andr%C3%A9%20Luis/Desktop/geolocalizao/mapaAddress.html";
-            txt_url.Text = $"file:///mapaAddress.html";
+
         }
 
         private void bt_go_Click(object sender, EventArgs e)
         {
-            //primeiro precisa https://www.nuget.org/packages/CefSharp.WinForms/#readme-body-tab
-            painel.Controls.Clear();
-            chr = new ChromiumWebBrowser(txt_url.Text);
-            var browser = chr;
-            //se der erro aqui https://www.nuget.org/packages/CefSharp.Common.NETCore/
-
-            painel.Controls.Add(browser);
+            chr.LoadUrl(txt_url.Text);
         }
 
         private void bt_clear_Click(object sender, EventArgs e)
@@ -47,11 +45,7 @@ namespace Geolocation3
 
         private void bt_refresh_Click(object sender, EventArgs e)
         {
-            string _url = painel.Controls[0].ToString();
-            chr.Refresh();
-
-            painel.Controls.Clear();
-            painel.Controls.Add(chr);   
+            chr.Reload();
 
         }
 
@@ -69,6 +63,26 @@ namespace Geolocation3
             {
                 bt_go_Click(sender, EventArgs.Empty);
             }
+        }
+
+        private void bt_voltar_Click(object sender, EventArgs e)
+        {
+            chr.FrameLoadEnd += Chr_FrameLoadEnd_bk;
+        }
+
+        private void bt_avancar_Click(object sender, EventArgs e)
+        {
+            chr.FrameLoadEnd += Chr_FrameLoadEnd_fw;
+        }
+
+        private void Chr_FrameLoadEnd_fw(object sender, FrameLoadEndEventArgs e)
+        {
+            chr.Forward();
+        }
+
+        private void Chr_FrameLoadEnd_bk(object sender, FrameLoadEndEventArgs e)
+        {
+            chr.Redo();
         }
     }
 }

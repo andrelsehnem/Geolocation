@@ -1,23 +1,24 @@
 {
   "version": 2,
-  "dgSpecHash": "sHJMWWZ9VfAfSK+P4EgIJFhozx1SrveDBdJnTkXbacS8UsDmN9dnVJin568jt7hSNw/db1Ovk+cQ7A6oJJ7iRg==",
+  "dgSpecHash": "aFRLMufO106qE02MnnhUZAhFR7cY0fusV8B8eoNd2YrtBajnEn4G6zLtmkUGws1oKQEOzRNud2uoHhxZuZXmfg==",
   "success": true,
-  "projectFilePath": "D:\\Projetos\\C#\\Geolocation3\\Geolocation3.csproj",
+  "projectFilePath": "D:\\Dev\\C#\\Littlemiun\\Littlemium.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\André Luis\\.nuget\\packages\\cefsharp.common\\109.1.110\\cefsharp.common.109.1.110.nupkg.sha512",
-    "C:\\Users\\André Luis\\.nuget\\packages\\cefsharp.common.netcore\\109.1.110\\cefsharp.common.netcore.109.1.110.nupkg.sha512",
-    "C:\\Users\\André Luis\\.nuget\\packages\\cefsharp.winforms\\109.1.110\\cefsharp.winforms.109.1.110.nupkg.sha512",
-    "C:\\Users\\André Luis\\.nuget\\packages\\cefsharp.winforms.netcore\\109.1.110\\cefsharp.winforms.netcore.109.1.110.nupkg.sha512",
-    "C:\\Users\\André Luis\\.nuget\\packages\\chromiumembeddedframework.runtime\\109.1.11\\chromiumembeddedframework.runtime.109.1.11.nupkg.sha512",
-    "C:\\Users\\André Luis\\.nuget\\packages\\chromiumembeddedframework.runtime.win-x64\\109.1.11\\chromiumembeddedframework.runtime.win-x64.109.1.11.nupkg.sha512",
-    "C:\\Users\\André Luis\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+    "C:\\Users\\als10\\.nuget\\packages\\cef.redist.x64\\109.1.11\\cef.redist.x64.109.1.11.nupkg.sha512",
+    "C:\\Users\\als10\\.nuget\\packages\\cef.redist.x86\\109.1.11\\cef.redist.x86.109.1.11.nupkg.sha512",
+    "C:\\Users\\als10\\.nuget\\packages\\cefsharp.common\\109.1.110\\cefsharp.common.109.1.110.nupkg.sha512",
+    "C:\\Users\\als10\\.nuget\\packages\\cefsharp.common.netcore\\109.1.110\\cefsharp.common.netcore.109.1.110.nupkg.sha512",
+    "C:\\Users\\als10\\.nuget\\packages\\cefsharp.winforms\\109.1.110\\cefsharp.winforms.109.1.110.nupkg.sha512",
+    "C:\\Users\\als10\\.nuget\\packages\\cefsharp.winforms.netcore\\109.1.110\\cefsharp.winforms.netcore.109.1.110.nupkg.sha512",
+    "C:\\Users\\als10\\.nuget\\packages\\chromiumembeddedframework.runtime\\109.1.11\\chromiumembeddedframework.runtime.109.1.11.nupkg.sha512",
+    "C:\\Users\\als10\\.nuget\\packages\\chromiumembeddedframework.runtime.win-x64\\109.1.11\\chromiumembeddedframework.runtime.win-x64.109.1.11.nupkg.sha512"
   ],
   "logs": [
     {
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "O pacote 'CefSharp.WinForms 109.1.110' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' em vez da estrutura de destino do projeto 'net5.0-windows7.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "message": "O pacote 'CefSharp.WinForms 109.1.110' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto 'net5.0-windows7.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
       "libraryId": "CefSharp.WinForms",
       "targetGraphs": [
         "net5.0-windows7.0"

@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Dev\\C#\\Littlemiun\\Geolocation3.csproj": {}
+    "D:\\Dev\\C#\\Littlemiun\\Littlemium.csproj": {}
   },
   "projects": {
-    "D:\\Dev\\C#\\Littlemiun\\Geolocation3.csproj": {
+    "D:\\Dev\\C#\\Littlemiun\\Littlemium.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dev\\C#\\Littlemiun\\Geolocation3.csproj",
-        "projectName": "Geolocation3",
-        "projectPath": "D:\\Dev\\C#\\Littlemiun\\Geolocation3.csproj",
+        "projectUniqueName": "D:\\Dev\\C#\\Littlemiun\\Littlemium.csproj",
+        "projectName": "Littlemium",
+        "projectPath": "D:\\Dev\\C#\\Littlemiun\\Littlemium.csproj",
         "packagesPath": "C:\\Users\\als10\\.nuget\\packages\\",
         "outputPath": "D:\\Dev\\C#\\Littlemiun\\obj\\",
         "projectStyle": "PackageReference",
