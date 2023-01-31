@@ -48,10 +48,6 @@
               "target": "Package",
               "version": "[109.1.110, )"
             },
-            "CefSharp.WinForms": {
-              "target": "Package",
-              "version": "[109.1.110, )"
-            },
             "CefSharp.WinForms.NETCore": {
               "target": "Package",
               "version": "[109.1.110, )"

@@ -8,6 +8,7 @@
     <dependencies>
       <group targetFramework="net5.0-windows7.0">
         <dependency id="CefSharp.Common" version="109.1.110" exclude="Build,Analyzers" />
+        <dependency id="CefSharp.WinForms" version="109.1.110" exclude="Build,Analyzers" />
         <dependency id="CefSharp.WinForms.NETCore" version="109.1.110" exclude="Build,Analyzers" />
       </group>
     </dependencies>
@@ -75,8 +76,8 @@
     </contentFiles>
   </metadata>
   <files>
-    <file src="D:\Dev\C#\Littlemiun\bin\Debug\net5.0-windows\win-x64\Littlemium.runtimeconfig.json" target="lib\net5.0-windows7.0\Littlemium.runtimeconfig.json" />
-    <file src="D:\Dev\C#\Littlemiun\bin\Debug\net5.0-windows\win-x64\Littlemium.dll" target="lib\net5.0-windows7.0\Littlemium.dll" />
+    <file src="D:\Dev\C#\Littlemiun\bin\Release\net5.0-windows\win-x64\Littlemium.runtimeconfig.json" target="lib\net5.0-windows7.0\Littlemium.runtimeconfig.json" />
+    <file src="D:\Dev\C#\Littlemiun\bin\Release\net5.0-windows\win-x64\Littlemium.dll" target="lib\net5.0-windows7.0\Littlemium.dll" />
     <file src="C:\Users\als10\.nuget\packages\chromiumembeddedframework.runtime\109.1.11\CEF\win-x64\locales\af.pak" target="content\af.pak" />
     <file src="C:\Users\als10\.nuget\packages\chromiumembeddedframework.runtime\109.1.11\CEF\win-x64\locales\af.pak" target="contentFiles\any\net5.0-windows7.0\af.pak" />
     <file src="C:\Users\als10\.nuget\packages\chromiumembeddedframework.runtime\109.1.11\CEF\win-x64\locales\am.pak" target="content\am.pak" />

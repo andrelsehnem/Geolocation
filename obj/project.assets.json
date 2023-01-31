@@ -137,18 +137,6 @@
           }
         }
       },
-      "CefSharp.WinForms/109.1.110": {
-        "type": "package",
-        "dependencies": {
-          "CefSharp.Common": "[109.1.110]"
-        },
-        "compile": {
-          "lib/net452/CefSharp.WinForms.dll": {}
-        },
-        "runtime": {
-          "lib/net452/CefSharp.WinForms.dll": {}
-        }
-      },
       "CefSharp.WinForms.NETCore/109.1.110": {
         "type": "package",
         "dependencies": {
@@ -216,18 +204,6 @@
         },
         "build": {
           "buildTransitive/CefSharp.Common.NETCore.targets": {}
-        }
-      },
-      "CefSharp.WinForms/109.1.110": {
-        "type": "package",
-        "dependencies": {
-          "CefSharp.Common": "[109.1.110]"
-        },
-        "compile": {
-          "lib/net452/CefSharp.WinForms.dll": {}
-        },
-        "runtime": {
-          "lib/net452/CefSharp.WinForms.dll": {}
         }
       },
       "CefSharp.WinForms.NETCore/109.1.110": {
@@ -1054,46 +1030,6 @@
         "runtimes/win-x86/native/CefSharp.BrowserSubprocess.runtimeconfig.json"
       ]
     },
-    "CefSharp.WinForms/109.1.110": {
-      "sha512": "6szGSjILm69OPh6yprpfii3blIc0O+mfCDk0X2yqq8cTCu5MPo4GUCYqqi1myWjJ6V9uiLCxIKI5FXvFEGCp/A==",
-      "type": "package",
-      "path": "cefsharp.winforms/109.1.110",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Readme.txt",
-        "cefsharp.winforms.109.1.110.nupkg.sha512",
-        "cefsharp.winforms.nuspec",
-        "lib/net452/CefSharp.WinForms.XML",
-        "lib/net452/CefSharp.WinForms.dll",
-        "lib/net452/CefSharp.WinForms.pdb",
-        "lib/net462/CefSharp.WinForms.XML",
-        "lib/net462/CefSharp.WinForms.dll",
-        "lib/net462/CefSharp.WinForms.pdb",
-        "src/CefSharp.WinForms/CefSettings.cs",
-        "src/CefSharp.WinForms/ChromiumWebBrowser.cs",
-        "src/CefSharp.WinForms/ChromiumWebBrowserDesigner.cs",
-        "src/CefSharp.WinForms/Experimental/ChromiumRenderWidgetHandleFinder.cs",
-        "src/CefSharp.WinForms/Experimental/ChromiumWidgetNativeWindow.cs",
-        "src/CefSharp.WinForms/Handler/DisplayHandler.cs",
-        "src/CefSharp.WinForms/Handler/LifeSpanHandler.cs",
-        "src/CefSharp.WinForms/Handler/LifeSpanHandlerBuilder.cs",
-        "src/CefSharp.WinForms/Handler/LoadHandler.cs",
-        "src/CefSharp.WinForms/Handler/PopupCreation.cs",
-        "src/CefSharp.WinForms/Host/ChromiumHostControl.cs",
-        "src/CefSharp.WinForms/Host/ChromiumHostControlBase.cs",
-        "src/CefSharp.WinForms/IWinFormsChromiumWebBrowser.cs",
-        "src/CefSharp.WinForms/IWinFormsWebBrowser.cs",
-        "src/CefSharp.WinForms/Internals/ControlExtensions.cs",
-        "src/CefSharp.WinForms/Internals/DefaultFocusHandler.cs",
-        "src/CefSharp.WinForms/Internals/NativeMethods.cs",
-        "src/CefSharp.WinForms/Internals/ParentFormMessageInterceptor.cs",
-        "src/CefSharp.WinForms/Properties/AssemblyInfo.cs",
-        "src/CefSharp.WinForms/WebBrowserExtensions.cs",
-        "src/CefSharp.WinForms/obj/Release/net452/.NETFramework,Version=v4.5.2.AssemblyAttributes.cs",
-        "src/CefSharp.WinForms/obj/Release/net462/.NETFramework,Version=v4.6.2.AssemblyAttributes.cs"
-      ]
-    },
     "CefSharp.WinForms.NETCore/109.1.110": {
       "sha512": "I9KVpMMmOmiC+1AFOUe6pSaOlFJE16mpL09xrzGVUY1HRATh1qsW7rRGeNd4lDN4GN6U4v+LosOrgUQmjOhyPA==",
       "type": "package",
@@ -1322,7 +1258,6 @@
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
       "CefSharp.Common >= 109.1.110",
-      "CefSharp.WinForms >= 109.1.110",
       "CefSharp.WinForms.NETCore >= 109.1.110"
     ]
   },
@@ -1374,10 +1309,6 @@
             "target": "Package",
             "version": "[109.1.110, )"
           },
-          "CefSharp.WinForms": {
-            "target": "Package",
-            "version": "[109.1.110, )"
-          },
           "CefSharp.WinForms.NETCore": {
             "target": "Package",
             "version": "[109.1.110, )"
@@ -1409,17 +1340,5 @@
         "#import": []
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "O pacote 'CefSharp.WinForms 109.1.110' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto 'net5.0-windows7.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
-      "libraryId": "CefSharp.WinForms",
-      "targetGraphs": [
-        "net5.0-windows7.0"
-      ]
-    }
-  ]
+  }
 }

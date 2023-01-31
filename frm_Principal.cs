@@ -1,8 +1,8 @@
-﻿using System;
-using System.Windows.Forms;
-using CefSharp;
+﻿using CefSharp;
 using CefSharp.Web;
 using CefSharp.WinForms;
+using System;
+using System.Windows.Forms;
 
 namespace Littlemium
 {
@@ -20,7 +20,7 @@ namespace Littlemium
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void txt_url_TextChanged(object sender, EventArgs e)
@@ -51,7 +51,7 @@ namespace Littlemium
 
         private void txt_url_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if(e.KeyChar == 13 )
+            if (e.KeyChar == 13)
             {
                 bt_go_Click(sender, EventArgs.Empty);
             }

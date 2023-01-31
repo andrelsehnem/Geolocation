@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Littlemium": {
+      "commandName": "Project",
+      "nativeDebugging": false
+    }
+  }
+}

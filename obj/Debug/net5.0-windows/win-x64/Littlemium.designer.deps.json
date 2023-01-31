@@ -52,17 +52,6 @@
           }
         }
       },
-      "CefSharp.WinForms/109.1.110": {
-        "dependencies": {
-          "CefSharp.Common": "109.1.110"
-        },
-        "runtime": {
-          "lib/net452/CefSharp.WinForms.dll": {
-            "assemblyVersion": "109.1.110.0",
-            "fileVersion": "109.1.110.0"
-          }
-        }
-      },
       "CefSharp.WinForms.NETCore/109.1.110": {
         "dependencies": {
           "CefSharp.Common.NETCore": "109.1.110"
@@ -105,13 +94,6 @@
       "sha512": "sha512-o1vDiVB1uAv2eWQEphgze8b/InIyifDJDAZ8nZdNarYT01+yOnwYxFbLYEpfmLAUUlduU0i4kXUv6tgQPykZjg==",
       "path": "cefsharp.common.netcore/109.1.110",
       "hashPath": "cefsharp.common.netcore.109.1.110.nupkg.sha512"
-    },
-    "CefSharp.WinForms/109.1.110": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-6szGSjILm69OPh6yprpfii3blIc0O+mfCDk0X2yqq8cTCu5MPo4GUCYqqi1myWjJ6V9uiLCxIKI5FXvFEGCp/A==",
-      "path": "cefsharp.winforms/109.1.110",
-      "hashPath": "cefsharp.winforms.109.1.110.nupkg.sha512"
     },
     "CefSharp.WinForms.NETCore/109.1.110": {
       "type": "package",
